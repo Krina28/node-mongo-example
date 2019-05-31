@@ -1,0 +1,19 @@
+extends layout/layout.pug
+
+block subject
+    | authorization_code
+
+block content
+
+    - var forgotPasswordLink = '#{SITE_URL}reset-password?token=#{userDetails.forgot_password_token}'
+    
+    p Hi #{userDetails.first_name} #{userDetails.last_name}
+
+    p We noticed that you login to a different device or ip address
+
+    p Please use this authorization code #{userDetails.p2p_auth_code} to secure your login.
+
+    p Regards, 
+
+    p #{PRODUCT_NAME}
+

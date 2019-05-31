@@ -1,0 +1,27 @@
+extends layout/layout.pug
+
+block subject
+    | contact_us  
+
+block content
+    
+    p Hello,
+
+    p You have received a new ticket from your website. Please find the information below:
+
+    p  
+        b Name : 
+        span #{data.userData.name}
+
+    p  
+        b Email : 
+        span #{data.userData.email}
+
+    p  
+        b Description : 
+        span #{data.userData.description}        
+
+   
+    p Regards,     
+    p #{PRODUCT_NAME}
+

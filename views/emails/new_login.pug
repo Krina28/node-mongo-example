@@ -1,0 +1,24 @@
+extends layout/layout.pug
+
+block subject
+    | Security Alert
+
+block content
+
+    p Hi #{data.userDetails.first_name} #{data.userDetails.last_name}
+
+    p Your #{PRODUCT_NAME} Account was just signed in from below device :
+
+    p 
+        b IP Address : #{data.ip} 
+    p 
+        b Device : #{data.device} 
+
+    p You are getting this email to make sure that it was you.
+
+    p If you did not make this login, please contact support immediately or send us email at info@cryptolending.org    
+    
+    p Regards, 
+    
+    p #{PRODUCT_NAME}
+

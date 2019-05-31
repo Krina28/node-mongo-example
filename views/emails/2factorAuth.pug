@@ -1,0 +1,19 @@
+extends layout/layout.pug
+
+block subject
+    | 2factor_code  
+
+block content
+    
+    p Hi #{userDetails.first_name} #{userDetails.last_name}
+
+    p Your two factor verification code
+
+    p <b>#{userDetails.p2p_auth_code}</b>
+
+    P Be sure to enter this code only on the cryptolending.org website.
+
+    p Regards, 
+
+    p #{PRODUCT_NAME}]''
+

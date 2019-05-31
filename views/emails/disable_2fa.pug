@@ -1,0 +1,18 @@
+extends layout/layout.pug
+
+block subject
+    | disable_twofa 
+
+block content
+
+    p Hi #{data.userDetails.first_name} #{data.userDetails.last_name},
+
+    p You have successfully disabled your two factor authentication.
+
+    p If you didn’t made this request, please contact us immediately at info@cryptolending.org
+
+    p Thank you.
+
+    p Regards, 
+    
+    p #{PRODUCT_NAME}

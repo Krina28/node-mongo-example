@@ -1,0 +1,18 @@
+extends layout/layout.pug
+
+block subject
+    | enable_twofa 
+
+block content
+
+    p Hi #{data.userDetails.first_name} #{data.userDetails.last_name},
+
+    p Congratulations on enabling the two factor on your P2P Account.
+
+    p You can disable this on the settings anytime.
+
+    p Thank you.
+
+    p Regards, 
+    
+    p #{PRODUCT_NAME}

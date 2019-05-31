@@ -1,0 +1,77 @@
+doctype html
+html
+
+  head
+    meta(name="viewport" content="width=device-width")
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    title
+      block subject
+      
+  body(style="padding:0; margin:0; color:#6e6e6e; font-family:Verdana; -webkit-text-size-adjust: none;")
+    div(style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#eee")
+      div(style="background-color:#eee")  
+        table(align="center",style="border-collapse:collapse;table-layout:fixed;margin-left:auto;margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#66bb6a;border-radius:4px 4px 0 0")
+          tbody
+            tr
+              td(width="570", style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;vertical-align:top;color:#60666d;font-size:16px;line-height:21px;font-family:sans-serif")
+                div(style="margin-left:20px;margin-right:20px")
+                  div(align="center", style="font-size: 1.3em;font-style: normal;font-weight: 700;line-height: 1.5em;color: #ffffff;")
+                    p(style="font-size: 1.3em;font-style: normal;font-weight: 700;line-height: 1.5em;color: #ffffff;text-align: center;") #{PRODUCT_NAME}
+                                  
+
+          table(align="center", style="border-collapse:collapse;table-layout:fixed;margin-left:auto;margin-right:auto;word-wrap:break-word;word-break:break-word;background-color:#ffffff")
+            tbody
+              tr
+                td(width="570" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;vertical-align:top;color:#60666d;font-size:16px;line-height:24px;font-family:sans-serif")
+                  div(style="margin-left:20px;margin-right:20px;margin-top:24px;margin-bottom:24px")
+                    div(style="margin-top:0;margin-bottom:0;font-size:16px;line-height:24px;text-align:left")
+                      
+                      block content
+                                    
+          table(width="570", align="center", bgcolor="#dddddd", style="background-color:#dddddd;border-collapse:collapse;table-layout:fixed;margin-right:auto;margin-left:auto", class="email-footer")
+            tbody
+              tr(style="border-top-width:1px;border-top-style:solid;border-top-color:#eeeeee")
+                td(style="padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;font-size:12px;line-height:19px;border-collapse:collapse;table-layout:fixed;border-spacing:0;color:#888;font-family:sans-serif")
+                  div
+                    div(style="text-align:center")
+                      Copyright &copy; #{PRODUCT_NAME} 2019
+                        
+
+
+
+//-
+
+      columns(class="container")
+        div(class="content")
+          span(class="preheader")
+            block preview
+          row(class="main")
+            columns(class="wrapper")
+              row
+                columns(class="logo-wrapper")
+                  img(src="https://raw.githubusercontent.com/appknox/press-kit/master/logo/logo-dark-small.png", class="logo", style="display:%SHOW_APPKNOX%")
+                  img(src="https://raw.githubusercontent.com/devknox/press-kit/master/logo/devknox.png", class="logo", style="display:%SHOW_DEVKNOX%")
+              row
+                columns
+                  p Hi %USERNAME%
+                  block content
+              row
+                columns
+                  | Cheers,
+                  br
+                  span(style="display:%SHOW_APPKNOX%")
+                    | Team Appknox
+                  span(style="display:%SHOW_DEVKNOX%")
+                    | Team Devknox
+                  br
+                  a(href="mailto:support@appknox.com", style="display:%SHOW_APPKNOX%") support@appknox.com
+                  a(href="mailto:support@devknox.io", style="display:%SHOW_DEVKNOX%") support@devknox.io
+          div(class="footer")
+            row
+              columns
+                span(class="apple-link", style="display:%SHOW_APPKNOX%")
+                  | Appknox, XYSec Labs, 79 Ayer Rajah Crescent, Singapore - 139951
+                span(class="apple-link", style="display:%SHOW_DEVKNOX%")
+                  | Devknox, XYSec Labs, 79 Ayer Rajah Crescent, Singapore - 139951
+      columns &nbsp; //
+
